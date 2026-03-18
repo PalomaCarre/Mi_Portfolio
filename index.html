@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Personaje | Programación</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="menu-juego">
+        <div class="contenedor-menu">
+            <div class="logo">🎮 Paloma R.Carreño</div>
+            <ul class="enlaces">
+                <li><a href="#sobre-mi">Bio</a></li>
+                <li><a href="#stats">Skills</a></li>
+                <li><a href="#proyectos">Partidas</a></li>
+                <li><a href="#contacto">Buzón</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="perfil">
+            <div class="avatar-marco">
+                <img src="https://via.placeholder.com/150" alt="Tu Avatar">
+            </div>
+            <h1>Paloma R.Carreño <span class="lvl">LVL 34</span></h1>
+            <p class="clase">Clase: Exploradora de Código</p>
+        </div>
+    </header>
+    <section id="sobre-mi" class="seccion-contenedor">
+        <div class="hoja-personaje">
+            <h2>📜 Mi Hoja de Personaje</h2>
+            <p>
+                ¡Hola! Soy Paloma R.Carreño. A mis <strong>34 años</strong>, he decidido iniciar una de las
+                misiones más emocionantes de mi vida: <strong>conquistar el mundo de la programación</strong>.
+            </p>
+            <p>
+                Vengo del mundo de los <strong>juegos de mesa y los videojuegos</strong>, lo que me ha
+                enseñado que cualquier problema complejo se puede resolver si entiendes bien las reglas
+                y trazas una buena estrategia.
+            </p>
+            <blockquote>
+                "No estoy empezando tarde, estoy llegando con un inventario lleno de experiencia,
+                paciencia y una lógica forjada en mil partidas."
+            </blockquote>
+            <p>
+                Actualmente estoy desbloqueando habilidades en <strong>HTML, CSS y JavaScript</strong>,
+                buscando mi primer equipo (empresa) para aportar mi visión detallista y mi pasión por
+                crear experiencias que no sean "frías", sino acogedoras y funcionales.
+            </p>
+        </div>
+    </section>
+
+    <section id="stats" class="stats">
+        <h2>Atributos (Skills)</h2>
+        <div class="mazo-cartas">
+            <div class="carta">
+                <span class="icono">🎨</span>
+                <h3>CSS Estético</h3>
+                <p>Poder para dar color y forma a mundos digitales.</p>
+            </div>
+            <div class="carta">
+                <span class="icono">📜</span>
+                <h3>HTML Estructura</h3>
+                <p>El pergamino base de cualquier aventura web.</p>
+            </div>
+            <div class="carta">
+                <span class="icono">🎲</span>
+                <h3>Lógica JS</h3>
+                <p>Lanzando dados para decidir qué pasa en la web.</p>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos" class="proyectos">
+        <h2>Mis Partidas Guardadas (Proyectos)</h2>
+        <p class="subtitulo-seccion">Cada proyecto es un nuevo nivel superado en esta aventura.</p>
+
+        <div class="estanteria-juegos">
+
+            <article class="juego-caja">
+                <div class="portada-juego">
+                    <img src="proyecto-f1.jpg" alt="Previsualización de mi web de F1" class="img-proyecto">
+                </div>
+
+                <div class="info-juego">
+                    <h3>🏁 Gran Premio de F1 Estático</h3>
+                    <p class="descripcion-corta">
+                        Mi primer gran reto: una landing page sobre la Fórmula 1. Aprendí a estructurar contenido
+                        complejo con HTML5 y a usar Flexbox para maquetar la parrilla de salida de forma totalmente
+                        responsiva. ¡Toda una pole position para empezar!
+                    </p>
+
+                    <div class="tags-skills">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3 Flexbox</span>
+                        <span class="tag">Responsivo</span>
+                    </div>
+
+                    <div class="botones-proyecto">
+                        <a href="https://formula1temporada-2526.vercel.app" target="_blank">
+                            (Demo) ➔
+                        </a>
+
+                        <a href="https://github.com/PalomaCarre/formula1temporada_2526" target="_blank">
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="juego-caja">
+                <div class="portada-juego">
+                    <span class="icono-juego">🎨</span>
+                </div>
+                <div class="info-juego">
+                    <h3>El Pintor de Píxeles</h3>
+                    <p class="descripcion-corta">Aprendiendo a usar CSS para que la web no parezca un documento de Word
+                        de los 90.</p>
+
+                    <div class="tags-skills">
+                        <span class="tag">CSS</span>
+                        <span class="tag">Diseño</span>
+                    </div>
+
+                    <a href="#" class="boton-jugar">Ver Partida →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <footer id="contacto" class="buzon-contacto">
+        <div class="pergamino-contacto">
+            <h2>✉️ ¿Te unes a mi partida?</h2>
+            <p>Estoy buscando nuevos retos y equipos en los que colaborar. ¡Mándame un mensaje!</p>
+
+            <div class="enlaces-sociales">
+                <a href="mailto:tuemail@ejemplo.com" class="link-item">
+                    <span class="emoji">📧</span> Enviar un correo
+                </a>
+                <a href="https://github.com/tuusuario" target="_blank" class="link-item">
+                    <span class="emoji">🐙</span> Ver mi GitHub
+                </a>
+                <a href="https://linkedin.com/in/tuusuario" target="_blank" class="link-item">
+                    <span class="emoji">💼</span> Conectar en LinkedIn
+                </a>
+            </div>
+
+            <div class="despedida">
+                <hr>
+                <p>© 2026 · Hecho con ☕ y mucha lógica por una "Coding Player" de 34 años.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="boton-subir" title="Volver al inicio">
+        <span class="flecha">↑</span>
+        <span class="texto-boton">Inicio</span>
+    </a>
+</body>
+
+</html>

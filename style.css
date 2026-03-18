@@ -1,0 +1,502 @@
+/* Colores cálidos y suaves */
+/* NUEVA PALETA DE COLORES COZY & TABLETOP */
+:root {
+    --fondo: #fcf8f2;     /* Lino claro, muy suave */
+    --primario: #6b8e23;  /* Verde musgo (para botones y LVL) */
+    --secundario: #a0522d;/* Marrón siena (para bordes de cartas) */
+    --texto: #4a3f35;     /* Marrón café muy oscuro (para leer bien) */
+    --carta: #ffffff;
+    --borde-suave: #e8dfd0;
+    --fuente-titulos: 'Almendra', serif; /* Estilo épico/juego */
+    --fuente-texto: 'Nunito', sans-serif; /* Estilo cozy/amigable */
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: var(--fuente-texto);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: var(--fuente-titulos);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px dashed #ccc;
+}
+
+.avatar-marco {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 5px solid var(--primario);
+    border-radius: 20px; /* Bordes redondeados, menos "cuadrado" */
+    overflow: hidden;
+    background: #eee;
+}
+
+.lvl {
+    background: var(--primario);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+.mazo-cartas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.carta {
+    background: var(--carta);
+    border: 2px solid #e0d5c1;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 0px #e0d5c1; /* Sombra tipo ilustración */
+    transition: transform 0.3s;
+}
+
+.carta:hover {
+    transform: translateY(-10px) rotate(2deg); /* Efecto de levantar una carta */
+}
+
+.icono {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+/* --- ESTILOS SECCIÓN PROYECTOS (PARTIDAS) --- */
+
+.proyectos {
+    padding: 60px 20px;
+    background-color: #fff; /* Fondo blanco para destacar */
+    border-radius: 30px;
+    margin: 40px 0;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    color: var(--text-suave);
+    margin-bottom: 40px;
+}
+
+.estanteria-juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Rejilla flexible */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.juego-caja {
+    background: var(--fondo);
+    border: 3px solid var(--secundario); /* Borde marrón siena */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.juego-caja:hover {
+    box-shadow: 0 10px 20px rgba(160, 82, 45, 0.2); /* Sombra suave al pasar el ratón */
+}
+
+.portada-juego {
+    background-color: var(--borde-suave);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--secundario);
+}
+
+.icono-juego {
+    font-size: 5em;
+}
+
+.info-juego {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Para que el botón siempre esté abajo */
+}
+
+.info-juego h3 {
+    margin-top: 0;
+    color: var(--secundario);
+}
+
+.descripcion-corta {
+    font-size: 0.9em;
+    flex-grow: 1;
+}
+
+.tags-skills {
+    margin: 15px 0;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #e0d5c1;
+    color: var(--texto);
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.botones-proyecto {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Empuja los botones al fondo de la caja */
+}
+
+.boton-jugar {
+    flex: 2; /* El botón de jugar es más grande */
+    background-color: var(--primario);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.boton-codigo {
+    flex: 1;
+    background-color: transparent;
+    color: var(--texto);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--secundario);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.boton-codigo:hover {
+    background-color: #f0ede6;
+}
+
+.boton-jugar:hover {
+    background-color: var(--texto); /* Cambia a café oscuro al hover */
+}
+/* --- ESTILOS PIE DE PÁGINA --- */
+
+.buzon-contacto {
+    padding: 80px 20px;
+    background-color: var(--secundario); /* Usamos el marrón siena de fondo */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pergamino-contacto {
+    background-color: var(--fondo);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 40px 10px 40px 10px; /* Esquinas asimétricas estilo papel artesanal */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    border: 2px solid #e0d5c1;
+}
+
+.pergamino-contacto h2 {
+    color: var(--secundario);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.enlaces-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.link-item {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--borde-suave);
+    transition: all 0.3s ease;
+}
+
+.link-item:hover {
+    background-color: var(--primario);
+    color: white;
+    transform: scale(1.05);
+}
+
+.despedida hr {
+    border: 0;
+    border-top: 1px solid var(--borde-suave);
+    margin: 20px 0;
+}
+
+.despedida p {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+/* --- ESTILO SECCIÓN SOBRE MÍ --- */
+
+.seccion-contenedor {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.hoja-personaje {
+    max-width: 700px;
+    background: #ffffff;
+    padding: 40px;
+    border: 2px solid var(--borde-suave);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 8px 8px 0px var(--borde-suave); /* Sombra sólida tipo dibujo */
+}
+
+.badge-bio {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--secundario);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.hoja-personaje h2 {
+    margin-top: 10px;
+    color: var(--secundario);
+}
+
+.cita-juego {
+    margin: 25px 0;
+    padding: 20px;
+    background: var(--fondo);
+    border-left: 4px solid var(--primario);
+    font-style: italic;
+    color: var(--texto);
+    line-height: 1.4;
+    border-radius: 0 10px 10px 0;
+}
+
+.hoja-personaje p {
+    font-size: 1.1em;
+    color: var(--texto);
+    margin-bottom: 15px;
+}
+
+.hoja-personaje, .juego-caja {
+    border: 3px solid #5f4b32; /* Marrón oscuro tipo marco */
+    border-radius: 2px 2px 2px 2px; /* Esquinas menos redondeadas, más de papel cortado */
+    box-shadow: 5px 5px 0px #d3c4a8; /* Sombra sólida */
+    background-image: linear-gradient(to bottom right, #ffffff, #fffdfa);
+}
+
+/* --- ESTILO MENÚ DE NAVEGACIÓN --- */
+.menu-juego {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(252, 248, 242, 0.95); /* Tu color de fondo con un poco de transparencia */
+    border-bottom: 2px solid var(--borde-suave);
+    padding: 10px 0;
+    backdrop-filter: blur(5px); /* Efecto cristal suave */
+}
+
+.contenedor-menu {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--secundario);
+    font-size: 1.2em;
+}
+
+.enlaces {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.enlaces a:hover {
+    color: var(--primario);
+}
+
+/* Para que al pinchar en el menú el salto no sea brusco */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- ESTILO BOTÓN SUBIR ARRIBA --- */
+
+.boton-subir {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primario); /* Tu verde musgo */
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 50px; /* Forma de píldora/poción */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 2000;
+    border: 2px solid white;
+}
+
+.boton-subir:hover {
+    transform: translateY(-5px); /* Flota un poquito más */
+    background-color: var(--secundario); /* Cambia a marrón siena */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.flecha {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.texto-boton {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Si quieres que solo se vea en pantallas grandes y no moleste en el móvil: */
+@media (max-width: 600px) {
+    .boton-subir {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px;
+    }
+    .texto-boton { display: none; } /* En el móvil solo dejamos la flecha */
+}
+/* --- ANIMACIÓN DE REPARTO DE CARTAS --- */
+
+/* 1. Definimos la animación "aparecer" */
+@keyframes repartirCarta {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotate(-2deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.hero h1 {
+    animation: aparecerTitulo 1s ease-out;
+}
+
+/* --- RESPONSIVE DESIGN (AJUSTES PARA MÓVIL Y TABLET) --- */
+
+@media (max-width: 768px) {
+    /* 1. Ajuste del Menú: En móvil el logo y los enlaces se centran */
+    .contenedor-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .enlaces {
+        gap: 15px;
+    }
+
+    .enlaces a {
+        font-size: 0.8em;
+    }
+
+    /* 2. Ajuste del Hero: Bajamos un poco el tamaño del título */
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .avatar-marco {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 3. Ajuste de Cartas: En lugar de filas, las ponemos en columnas */
+    .mazo-cartas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta {
+        width: 85%; /* Que ocupen casi todo el ancho */
+        max-width: 300px;
+    }
+
+    /* 4. Ajuste de la Hoja de Personaje (Sobre mí) */
+    .hoja-personaje {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .cita-juego {
+        font-size: 0.95em;
+    }
+
+    /* 5. Ajuste de la Estantería de Proyectos */
+    .estanteria-juegos {
+        grid-template-columns: 1fr; /* Una sola columna de proyectos */
+        padding: 0 10px;
+    }
+}
+
+/* Ajuste extra para pantallas muy pequeñitas (móviles antiguos) */
+@media (max-width: 480px) {
+    .enlaces {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo {
+        font-size: 1em;
+    }
+}
